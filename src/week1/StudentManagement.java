@@ -6,6 +6,10 @@ public class StudentManagement {
 
     public boolean sameGroup(Student s1, Student s2) {
         // TODO:
+        if(s1.group.equals(s2.group)){
+        return true;
+        }
+        else      
         return false; // xóa dòng này sau khi cài đặt
     }
 
@@ -19,5 +23,21 @@ public class StudentManagement {
 
     public static void main(String[] args) {
         // TODO:
+        Student student1 = new Student();
+        student1.setName("Le Thanh Vinh");
+        student1.setId("17021132");
+        student1.setGroup("INT22041");
+        student1.setEmail="17021132uet@vnu.edu.vn";
+        student1.getInfo();
+        Student student2 = new Student();
+        student2.setName("Nguyen Van A");
+        student2.setId("111");
+        student2.setGroup("INT22041");
+        student2.setEmail="111uet@vnu.edu.vn";
+        Student student1 = new Student();
+        student1.setName("Nguyen Van B");
+        student1.setId("222");
+        student1.setGroup("INT22042");
+        student1.setEmail="222uet@vnu.edu.vn";
     }
 }
