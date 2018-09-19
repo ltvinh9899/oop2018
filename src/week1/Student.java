@@ -50,7 +50,7 @@ public class Student {
      * @param sid
      * @param em
      */
-    Student(String n, String sid, String em) {
+    public Student(String n, String sid, String em) {
         // TODO:
         this.name = n;
         this.id = sid;
@@ -62,7 +62,7 @@ public class Student {
      * Constructor 3
      * @param s
      */
-    Student(Student s) {
+    public Student(Student s) {
         // TODO:
         this.name = s.getName();
         this.id = s.getId();
@@ -71,7 +71,7 @@ public class Student {
         
     }
 
-    String getInfo() {
+    public String getInfo() {
         // TODO:
         return "Ten: " + name + "\n" + "Ma so SV: " + id + "\n" + "Lop: " + group + "\n" + "Email: " + email;
       //  return null; // xóa dòng này sau khi cài đặt
