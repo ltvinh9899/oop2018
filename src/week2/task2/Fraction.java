@@ -82,7 +82,8 @@ public class Fraction {
         KQ.rutGon();
         return KQ;
     }
-    public  boolean equals(Fraction other){
+    public  boolean equals(Object obj){
+        Fraction other = (Fraction) obj;
         int a =  this.numerator * other.denominator - other.numerator * this.denominator;
         if(a == 0)
             return true;
