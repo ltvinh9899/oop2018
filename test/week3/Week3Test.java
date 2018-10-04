@@ -1,23 +1,21 @@
 package week3;
 
 //import com.sun.org.apache.xpath.internal.operations.Equals;
-import org.junit.Assert;
+//import org.junit.Assert;
+import static org.junit.Assert.*;
+import week3.Week3;
+import org.junit.Test;
 
 public class Week3Test {
 
     // TODO: Viết 5 testcase cho phương thức max()
       public  void testMax(){
           Week3 tm = new Week3();
-          int a = tm.max(10, 5);
-          int b = tm.max(12, 15);
-          int c = tm.max(15, 13);
-          int d = tm.max(16, 13);
-          int e = tm.max(15, 12);
-          Assert.assertEquals(10, a);
-          Assert.assertEquals(15, b);
-          Assert.assertEquals(15, c);
-          Assert.assertEquals(16, d);
-          Assert.assertEquals(15, e);
+          assertEquals(10, tm.max(10, 5));
+          assertEquals(15, tm.max(12, 15));
+          assertEquals(15, tm.max(15, 13));
+          assertEquals(16,  tm.max(16, 13));
+          assertEquals(15, tm.max(15, 12));
       }
     // TODO: Viết 5 testcase cho phương thức minOfArray()
       public void testMinOfArray(){
@@ -27,16 +25,11 @@ public class Week3Test {
           int c[] = {4, 5, 6, 2, 8, 9};
           int d[] = {17, 18, 12, 3, 7, 13};
           int e[] = {34, 35, 13, 45, 23, 45};
-          int x = tm.minOfArray(a);
-          int y = tm.minOfArray(b);
-          int z = tm.minOfArray(c);
-          int t = tm.minOfArray(d);
-          int v = tm.minOfArray(e);
-          Assert.assertEquals(1, x);
-          Assert.assertEquals(0, y);
-          Assert.assertEquals(2, z);
-          Assert.assertEquals(3, t);
-          Assert.assertEquals(13, e);
+          assertEquals(1, tm.minOfArray(a));
+          assertEquals(0, tm.minOfArray(b));
+          assertEquals(2, tm.minOfArray(c));
+          assertEquals(3, tm.minOfArray(d));
+         assertEquals(13, tm.minOfArray(e));
       }
     // TODO: Viết 5 testcase cho phương thức calculateBMI()
     public void testCalculateBMI(){
