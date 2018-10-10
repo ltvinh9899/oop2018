@@ -7,3 +7,27 @@
  * @version 0.1
  */
 package week4.task1;
+class Main{
+    public static void main(String[] agrs) {
+        HoaQua hq = new HoaQua();
+        hq.nhapThongTin();
+        hq.getInfo();
+
+       Cam c = new Cam();
+       c.nhapThongTin();
+       c.getInfo();
+
+        CamThanhPhong ctp = new CamThanhPhong();
+        ctp.nhapThongTin();
+        ctp.dinhGia();
+        ctp.getInfo();
+        CamSanh cs = new CamSanh();
+        cs.nhapThongTin();
+        cs.dinhGia();
+        cs.getInfo();
+        Tao t = new Tao();
+        t.nhapThongTin();
+        t.dinhGia();
+        t.getInfo();
+   }
+}
