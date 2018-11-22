@@ -1,7 +1,7 @@
 package week11;
 
 public class Task2 {
-    public static  <T extends Comparable> T maxArray(T[] a){
+     public static  <T extends Comparable> T maxArray(T[] a){
         T max = a[0];
         for(T s : a){
             if(s.compareTo(max) > 0){
